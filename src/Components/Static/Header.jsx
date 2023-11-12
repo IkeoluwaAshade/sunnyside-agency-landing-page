@@ -13,7 +13,7 @@ const Header = () => {
             </Logo>
 
             <Navsbar>
-                <Navigation>
+            
                     <Nav>About</Nav>
 
                     <Nav>Services</Nav>
@@ -21,7 +21,7 @@ const Header = () => {
                     <Nav>Project</Nav>
 
                     <Nav>Contact</Nav>
-                </Navigation>
+                
             </Navsbar>
         </Wrapper>
     </Container>
@@ -31,18 +31,50 @@ const Header = () => {
 export default Header
 
 const Container = styled.div`
-    background-image: ;
-    background-size: cover;
+    background-color: red;
+    /* background-size: cover; */
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+background-color: aqua;
+width: 85%;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+`
 
 const Logo = styled.div`
-    background-color: skyblue;
+    /* background-color: skyblue; */
 `
 
-const Navsbar = styled.div``
+const Navsbar = styled.div`
+/* background-color: pink; */
+width: 300px;
 
-const Navigation = styled.div``
 
-const Nav = styled.div``
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+`
+
+const Nav = styled.div`
+&:hover {
+    width: 72px;
+    transition: all 350ms;
+    border-radius: 20px;
+    background-color: hsl(210, 4%, 67%);
+
+
+    color: skyblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+`
