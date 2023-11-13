@@ -4,6 +4,7 @@ import logoText from '../../assets/logo.svg'
 import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {GiCancel} from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -23,14 +24,25 @@ const Header = () => {
             </Logo>
 
             <Navsbar>
-            
-                <Nav>About</Nav>
+                <Link to='/'>
+                </Link>
 
-                <Nav>Services</Nav>
+                <Link to='/about'>
+                    <Nav>About</Nav>
+                </Link>
 
-                <Nav>Projects</Nav>
+                <Link to='/service'>
+                    <Nav>Services</Nav>
+                </Link>
+                
 
-                <ContactDiv>Contact</ContactDiv>
+                <Link to='/project'>
+                    <Nav>Projects</Nav>
+                </Link>
+
+                <Link to='/contact'>
+                    <ContactDiv>Contact</ContactDiv>
+                </Link>
                 
             </Navsbar>
 
@@ -99,6 +111,7 @@ align-items: center;
 const Nav = styled.div`
 color: hsl(0, 0%, 100%);
 
+
 &:hover {
     background-color: #6FCFFF;
     color: hsl(0, 0%, 100%);
@@ -120,8 +133,9 @@ color: hsl(0, 0%, 100%);
     transform: scale(1.1);
 }
 
-
 `
+
+
 
 const ContactDiv = styled.div`
  background-color: hsl(0, 0%,100%);

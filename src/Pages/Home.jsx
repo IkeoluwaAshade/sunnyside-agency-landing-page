@@ -1,8 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <Container>Home</Container>
+    <Container>This is Home
+        <Link to="/"></Link>
+    </Container>
+    
   )
 }
 
