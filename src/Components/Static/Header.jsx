@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import logoText from '../../assets/logo.svg'
 import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
+import {GiHamburgerMenu} from 'react-icons/gi'
+import {GiCancel} from 'react-icons/gi'
 
 const Header = () => {
+
+    const [toggle, setToggle] = useState(false)
+
+    const toggleChange = () => {
+        setToggle(!toggle)
+    }
+
+
   return (
     <Container>
         <Wrapper>
@@ -14,15 +24,31 @@ const Header = () => {
 
             <Navsbar>
             
-                    <Nav>About</Nav>
+                <Nav>About</Nav>
 
-                    <Nav>Services</Nav>
+                <Nav>Services</Nav>
 
-                    <Nav>Projects</Nav>
+                <Nav>Projects</Nav>
 
                 <ContactDiv>Contact</ContactDiv>
                 
             </Navsbar>
+
+            <BurgerIconHold onClick={toggleChange}>
+                {toggle ? (
+                    <GiCancel color='white'
+                    size='25px' />
+                ) : (
+                    <GiHamburgerMenu color='white'
+                    size='25px' />
+                )
+                }
+
+            </BurgerIconHold>
+
+
+
+
         </Wrapper>
     </Container>
   )
@@ -63,6 +89,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 
 `
 
@@ -129,4 +159,13 @@ const ContactDiv = styled.div`
     transform: scale(1.1);
 }
 
+`
+
+
+const BurgerIconHold = styled.div`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 `
