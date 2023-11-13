@@ -18,9 +18,9 @@ const Header = () => {
 
                     <Nav>Services</Nav>
 
-                    <Nav>Project</Nav>
+                    <Nav>Projects</Nav>
 
-                    <Nav>Contact</Nav>
+                <ContactDiv>Contact</ContactDiv>
                 
             </Navsbar>
         </Wrapper>
@@ -31,9 +31,10 @@ const Header = () => {
 export default Header
 
 const Container = styled.div`
-    background-color: red;
+    background-color: #3EBFFF;
     /* background-size: cover; */
     width: 100%;
+    height: 70px;
 
     display: flex;
     justify-content: center;
@@ -41,7 +42,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-background-color: aqua;
+/* background-color: aqua; */
 width: 85%;
 
 display: flex;
@@ -55,7 +56,7 @@ const Logo = styled.div`
 
 const Navsbar = styled.div`
 /* background-color: pink; */
-width: 300px;
+width: 325px;
 
 
 display: flex;
@@ -66,15 +67,66 @@ align-items: center;
 `
 
 const Nav = styled.div`
+color: hsl(0, 0%, 100%);
+
 &:hover {
+    background-color: #6FCFFF;
+    color: hsl(0, 0%, 100%);
     width: 72px;
-    transition: all 350ms;
+    font-family: "Fraunces";
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 20px;
-    background-color: hsl(210, 4%, 67%);
+    padding: 5px 8px;
+    
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    color: skyblue;
+    transition: all 350ms;
+    text-transform: uppercase;
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+`
+
+const ContactDiv = styled.div`
+ background-color: hsl(0, 0%,100%);
+ color: #000;
+ border-radius: 20px;
+ width: 80px;
+ padding: 7px;
+ font-size: 14px;
+ font-weight: 900;
+ text-transform: uppercase;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+ &:hover {
+    background-color: #6FCFFF;
+    color: hsl(0, 0%, 100%);
+    width: 72px;
+    font-family: "Fraunces";
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 5px 8px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 350ms;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 `
