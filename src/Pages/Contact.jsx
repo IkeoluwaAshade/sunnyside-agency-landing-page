@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import Header from '../Components/Static/Header'
+
 
 const Contact = () => {
   return (
     <Container>
-        <Link to="/contact"></Link>
+        <Header />
 
         <h2>This is the Contact page</h2>
     </Container>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import logoText from '../../assets/logo.svg'
-import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
+// import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {GiCancel} from 'react-icons/gi'
 import { Link } from 'react-router-dom'
@@ -27,16 +27,22 @@ const Header = () => {
                 <Link to='/'>
                 </Link>
 
-                <Link to='/about'>
+                <Link style={{
+                    textDecoration: "none",
+                }} to='/about'>
                     <Nav>About</Nav>
                 </Link>
 
-                <Link to='/service'>
+                <Link style={{
+                    textDecoration: "none",
+                }} to='/service'>
                     <Nav>Services</Nav>
                 </Link>
                 
 
-                <Link to='/project'>
+                <Link style={{
+                    textDecoration: "none",
+                }} to='/project'>
                     <Nav>Projects</Nav>
                 </Link>
 

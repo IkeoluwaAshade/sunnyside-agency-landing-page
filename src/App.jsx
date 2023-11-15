@@ -20,7 +20,7 @@ const App = () => {
       <Service /> */}
 
      <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
 
         <Route path='/' element={<Home/>} />
