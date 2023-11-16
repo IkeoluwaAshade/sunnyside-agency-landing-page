@@ -45,15 +45,12 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 
-/* h2 {
-color: hsl(212, 27%, 19%);
-font-weight: 900;
-} */
+
 `
 
 const TextPartHold = styled.div`
 width: 60%;
-height: 80%;
+height: 50%;
 font-size: 18px;
 margin: 50px 0;
 
