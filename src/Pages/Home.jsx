@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import imageHeader from '../assets/Jpeg/Desktop/image-header.jpg'
 import Header from '../Components/Static/Header'
 import HeroPage from '../Components/Block/heroPage/HeroPage'
+import SectionOne from '../Components/Block/sectionOne/sectionOne'
+import Footer from '../Components/Static/Footer'
 
 // import ArrowDown from '../assets/icon-arrow-down.svg'
 
@@ -11,6 +13,8 @@ const Home = () => {
     <Container>
         <Header />
         <HeroPage />
+        <SectionOne />
+        <Footer />
 
         {/* <Wrapper>
           <h1>We are creatives</h1>
