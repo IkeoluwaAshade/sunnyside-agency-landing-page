@@ -3,28 +3,27 @@ import styled from 'styled-components'
 import imageHeader from '../assets/Jpeg/Desktop/image-header.jpg'
 import Header from '../Components/Static/Header'
 import HeroPage from '../Components/Block/heroPage/HeroPage'
-import SectionOne from '../Components/Block/sections/sectionOne'
+// import Initial from '../Components/Block/sections/Initial'
+import SectionOne from '../Components/Block/sections/SectionOne'
 import SectionTwo from '../Components/Block/sections/SectionTwo'
 import SectionThree from '../Components/Block/sections/SectionThree'
 import Footer from '../Components/Static/Footer'
 
-// import ArrowDown from '../assets/icon-arrow-down.svg'
 
 const Home = () => {
   return (
     <Container>
         <Header />
         <HeroPage />
+        {/* <Initial /> */}
         <SectionOne />
         <SectionTwo />
         <SectionThree />
         
+        
         <Footer />
 
-        {/* <Wrapper>
-          <h1>We are creatives</h1>
-          <img src={ArrowDown} alt="" />
-        </Wrapper> */}
+        
     </Container>
     
   )

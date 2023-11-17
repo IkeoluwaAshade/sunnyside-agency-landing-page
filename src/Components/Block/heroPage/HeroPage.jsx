@@ -18,6 +18,7 @@ export default HeroPage
 
 const Container = styled.div`
 background-image: url(${imageHeader});
+/* background-repeat: no-repeat; */
 width: 100%;
 height: 100vh;
 background-position: center;
