@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import imageHeader from '../assets/Jpeg/Desktop/image-header.jpg'
 import Header from '../Components/Static/Header'
 import HeroPage from '../Components/Block/heroPage/HeroPage'
-import SectionOne from '../Components/Block/sectionOne/sectionOne'
+import SectionOne from '../Components/Block/sections/sectionOne'
+import SectionTwo from '../Components/Block/sections/SectionTwo'
 import Footer from '../Components/Static/Footer'
 
 // import ArrowDown from '../assets/icon-arrow-down.svg'
@@ -14,6 +15,8 @@ const Home = () => {
         <Header />
         <HeroPage />
         <SectionOne />
+        <SectionTwo />
+        
         <Footer />
 
         {/* <Wrapper>
