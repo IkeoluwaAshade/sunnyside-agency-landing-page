@@ -33,6 +33,8 @@ const Wrapper = styled.div`
 
 const Textpart = styled.div`
   width: 50vw;
+  /* background-color: red; */
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +46,7 @@ const TextPartHold = styled.div`
   height: 50%;
   font-size: 18px;
   margin: 50px 0;
-
+   
   h2 {
     color: hsl(212, 27%, 19%);
     font-family: "Fraunces";

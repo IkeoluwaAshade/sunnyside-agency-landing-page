@@ -5,6 +5,7 @@ import Header from '../Components/Static/Header'
 import HeroPage from '../Components/Block/heroPage/HeroPage'
 import SectionOne from '../Components/Block/sections/sectionOne'
 import SectionTwo from '../Components/Block/sections/SectionTwo'
+import SectionThree from '../Components/Block/sections/SectionThree'
 import Footer from '../Components/Static/Footer'
 
 // import ArrowDown from '../assets/icon-arrow-down.svg'
@@ -16,6 +17,7 @@ const Home = () => {
         <HeroPage />
         <SectionOne />
         <SectionTwo />
+        <SectionThree />
         
         <Footer />
 
