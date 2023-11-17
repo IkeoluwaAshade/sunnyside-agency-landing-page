@@ -7,6 +7,7 @@ import HeroPage from '../Components/Block/heroPage/HeroPage'
 import SectionOne from '../Components/Block/sections/SectionOne'
 import SectionTwo from '../Components/Block/sections/SectionTwo'
 import SectionThree from '../Components/Block/sections/SectionThree'
+import Testimonial from '../Components/Block/Testimonials/Testimonial'
 import Footer from '../Components/Static/Footer'
 
 
@@ -19,6 +20,7 @@ const Home = () => {
         <SectionOne />
         <SectionTwo />
         <SectionThree />
+        <Testimonial />
         
         
         <Footer />
