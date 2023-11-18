@@ -8,6 +8,7 @@ import SectionOne from '../Components/Block/sections/SectionOne'
 import SectionTwo from '../Components/Block/sections/SectionTwo'
 import SectionThree from '../Components/Block/sections/SectionThree'
 import Testimonial from '../Components/Block/Testimonials/Testimonial'
+import Gallery from '../Components/Block/Gallery/Gallery'
 import Footer from '../Components/Static/Footer'
 
 
@@ -21,6 +22,7 @@ const Home = () => {
         <SectionTwo />
         <SectionThree />
         <Testimonial />
+        <Gallery />
         
         
         <Footer />
