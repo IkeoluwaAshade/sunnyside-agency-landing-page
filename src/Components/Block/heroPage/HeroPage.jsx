@@ -27,11 +27,19 @@ background-size: cover;
 
 const Wrapper = styled.div`
     h1 {
+        /* background-color: red; */
         color: #fff;
         text-transform: uppercase;
         font-family: "Fraunces";
         font-size: 60px;
         font-weight: 700;
+        text-align: center;
+        line-height: normal;
+
+        @media (max-width: 500px) {
+            font-size: 50px;
+            
+        }
     }
 
     width: 100%;

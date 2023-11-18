@@ -79,8 +79,6 @@ export default SectionThree
 const Container = styled.div`
 /* background-color: red; */
 
-
-    
 `
 
 const Wrapper = styled.div`

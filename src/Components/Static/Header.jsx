@@ -99,7 +99,7 @@ const Logo = styled.div`
 `
 
 const Navsbar = styled.div`
-/* background-color: pink; */
+/* background-color: red; */
 width: 325px;
 
 
