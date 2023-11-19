@@ -28,6 +28,7 @@ const Container = styled.div`
 background-color: hsl(0, 0%, 100%);
 /* width: 100%; */
 height: 455px;
+margin-bottom: 375px;
 `
 
 const Wrapper = styled.div`
