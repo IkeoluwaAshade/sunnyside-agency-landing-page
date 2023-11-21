@@ -25,14 +25,14 @@ const Gallery = () => {
 export default Gallery
 
 const Container = styled.div`
-background-color: hsl(0, 0%, 100%);
+background-color: green;
 /* width: 100%; */
-height: 455px;
-margin-bottom: 375px;
+height: 380px;
 `
 
 const Wrapper = styled.div`
 display: flex;
+background-color: red;
 
 img {
     width: 100%;

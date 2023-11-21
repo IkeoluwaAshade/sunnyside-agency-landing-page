@@ -6,7 +6,6 @@ import imageTransform from '../../../assets/Jpeg/Desktop/image-transform.jpg'
 
 const SectionTwo = () => {
   return (
-    <Container>
         <Wrapper>
 
             <PartOne Headings="Transform your brand"
@@ -19,16 +18,23 @@ const SectionTwo = () => {
             <PartTwo Image={imageTransform} />
 
         </Wrapper>
-    </Container>
+    
   )
 }
 
 export default SectionTwo
 
-const Container = styled.div`
-
-`
 
 const Wrapper = styled.div`
-    display: flex;
+background-color: red;
+width: 100%;
+display: flex;
+
+/* flex-direction: column; */
+
+@media (max-width: 500px) {
+  flex-direction: column;
+  
+  
+}
 `

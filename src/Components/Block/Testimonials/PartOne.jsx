@@ -39,6 +39,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+
+@media (max-width: 500px) {
+  width: 90%;
+  
+}
 `
 
 const ProfileShot = styled.div`

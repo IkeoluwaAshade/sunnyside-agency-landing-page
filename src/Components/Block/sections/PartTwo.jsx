@@ -12,9 +12,24 @@ const PartTwo = ({ Image }) => {
 export default PartTwo
 
 const Container = styled.div`
+width: 50vw;
+height: 500px;
+
+@media (max-width: 500px) {
+    width: 100%;
+  }
+
+
     img {
+
+
         width: 50vw;
-        height: 100%;
+        height: 500px; 
         object-fit: cover;
+
+        @media (max-width: 500px) {
+    width: 100%;
+  }
+
     }
 `

@@ -8,13 +8,15 @@ import JenniesHead from "../../../assets/image-jennie.jpg"
 const Testimonial = () => {
   return (
     <Container>
+      
         <Wrapper>
 
             <HeaderHold>
                 <h3>Client Testimonials</h3>
             </HeaderHold>
 
-            <PartOneHold><PartOne
+            <PartOneHold>
+              <PartOne
             HeadShot={HeadShot}
 
             ParagraphyText="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
@@ -36,7 +38,8 @@ const Testimonial = () => {
             ParagraphyText="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
             
             Name="Jennie F.."
-            Office="Business Onwer" /></PartOneHold>
+            Office="Business Onwer" />
+            </PartOneHold>
             
         </Wrapper>
     </Container>
@@ -69,5 +72,7 @@ const HeaderHold = styled.div`
 const PartOneHold = styled.div`
 display: flex;
 justify-content: center;
+
+flex-wrap: wrap;
 
 `
