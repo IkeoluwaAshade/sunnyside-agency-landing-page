@@ -19,8 +19,8 @@ const Home = () => {
         <HeroPage />
         {/* <Initial /> */}
         <SectionOne />
-        {/* <SectionTwo />
-        <SectionThree /> */}
+        <SectionTwo />
+        {/* <SectionThree /> */}
         <Testimonial />
         {/* <Gallery /> */}
         

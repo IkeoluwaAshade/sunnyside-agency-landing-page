@@ -26,14 +26,14 @@ export default SectionTwo
 
 
 const Wrapper = styled.div`
-background-color: red;
+/* background-color: red; */
 width: 100%;
 display: flex;
 
 /* flex-direction: column; */
 
 @media (max-width: 500px) {
-  flex-direction: column;
+  flex-direction: column-reverse;
   
   
 }
