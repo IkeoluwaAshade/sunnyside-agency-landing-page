@@ -21,15 +21,13 @@ height: 500px;
 
 
     img {
+      width: 50vw;
+      height: 500px; 
+      object-fit: cover;
 
-
-        width: 50vw;
-        height: 500px; 
-        object-fit: cover;
-
-        @media (max-width: 500px) {
-    width: 100%;
-  }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
     }
 `

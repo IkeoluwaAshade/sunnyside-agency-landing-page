@@ -47,25 +47,30 @@ const SectionThree = () => {
         <Wrapper>
             <FirstPart>
                 <ImageDiv>
-                <img src={Tomatoe} alt="" /></ImageDiv>
+                    <img src={Tomatoe} alt="" />
+                </ImageDiv>
 
                 <HeadingandPara>
-                <h2>Graphic Design</h2>
+                    <h2>Graphic Design</h2>
 
-                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p></HeadingandPara>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </HeadingandPara>
 
             </FirstPart>
 
             <SecondPart>
                 <ImageDivTwo>
-                <img src={Tangerine} alt="" /></ImageDivTwo>
+                    <img src={Tangerine} alt="" />
+                </ImageDivTwo>
 
                 <Div>
-                <HeadingandParaTwo>
-                <h2>Photography</h2>
+                    <HeadingandParaTwo>
+                        <h2>Photography</h2>
 
                 
-                <p>Increase your credibilty by getting the most stunning, high-quality photos that improve your business image.</p></HeadingandParaTwo></Div>
+                        <p>Increase your credibilty by getting the most stunning, high-quality photos that improve your business image.</p>
+                    </HeadingandParaTwo>
+                </Div>
 
             </SecondPart>
 
@@ -84,10 +89,13 @@ const Container = styled.div`
 const Wrapper = styled.div`
     display: flex;
     height: 750px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 `
 
 const FirstPart = styled.div`
-/* background-image: url(${Tomatoe}); */
 background-color: #90D4C7;
 color: hsl(167, 40%, 24%);
 width: 50vw;
@@ -108,7 +116,10 @@ font-weight: 600;
 font-size: 18px;
 }
 
-    
+@media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+}
 `
 
 const ImageDiv = styled.div`
@@ -179,5 +190,9 @@ const HeadingandParaTwo = styled.div`
         font-size: 18px;
         font-weight: 600;
         text-align: center;
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column;
     }
 `
