@@ -1,41 +1,3 @@
-// import React from 'react'
-// import styled from 'styled-components'
-// import PartThree from './PartThree'
-// import Tomatoe from '../../../assets/Jpeg/Desktop/image-graphic-design.jpg'
-// import Tangerine from '../../../assets/Jpeg/Desktop/image-photography.jpg'
-
-// const SectionThree = () => {
-//   return (
-//     <Container>
-//         <Wrapper>
-//             <PartThree
-//             Fruit={Tomatoe}
-
-//             Headings="Graphic Design"
-
-//             Paragraphy="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention." />
-
-//             <PartThree Fruit={Tangerine}
-            
-//             Headings="Photography" 
-            
-//             Paragraphy="Increase your credibilty by getting the most stunning, high-quality photos that improve your business image." />
-
-            
-//         </Wrapper>
-//     </Container>
-//   )
-// }
-
-// export default SectionThree
-
-// const Container = styled.div``
-
-// const Wrapper = styled.div`
-// display: flex;
-// `
-
-
 import React from 'react'
 import styled from 'styled-components'
 import Tomatoe from '../../../assets/Jpeg/Desktop/image-graphic-design.jpg'
@@ -89,6 +51,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     display: flex;
     height: 750px;
+    
 
     @media (max-width: 500px) {
         flex-direction: column;
@@ -117,20 +80,36 @@ font-size: 18px;
 }
 
 @media (max-width: 500px) {
-    flex-direction: column;
+    /* background-color: red; */
     width: 100%;
 }
+
 `
 
 const ImageDiv = styled.div`
 display: flex;
 justify-content: center;
 
-width: 100%;
 height: 400px;
+
+@media (max-width: 500px) {
+/* width: 100%; */
+}
+
+img {
+    object-fit: cover;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
+
 `
 
 const HeadingandPara = styled.div`
+
+padding: 0 21px;
+
 
 display: flex;
 justify-content: center;
@@ -153,11 +132,14 @@ const SecondPart = styled.div`
     color: hsl(198, 62%, 26%);
     width: 50vw;
     
-
+    /* @media (max-width: 500px) {
+        flex-direction: column;
+        width: 100%;
+    } */
 `
 
 const ImageDivTwo = styled.div`
-    width: 100%;
+    /* width: 100%; */
     height: 400px;
     display: flex;
     justify-content: center;
@@ -192,7 +174,5 @@ const HeadingandParaTwo = styled.div`
         text-align: center;
     }
 
-    @media (max-width: 500px) {
-        flex-direction: column;
-    }
+    
 `

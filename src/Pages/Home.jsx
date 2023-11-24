@@ -36,7 +36,7 @@ const Home = () => {
 export default Home
 
 const Container = styled.div`
- background-image: url(${imageHeader});
+ /* background-image: url(${imageHeader}); */
 /* background-color: red; */
 // width: 100%;
 // height: 100vh;

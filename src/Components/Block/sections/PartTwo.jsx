@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const PartTwo = ({ Image }) => {
   return (
     <Container>
-        <img src={Image} alt="Image of an Egg with a yellow background" />
+      <img src={Image} alt="Image of an Egg with a yellow background" />
     </Container>
   )
 }

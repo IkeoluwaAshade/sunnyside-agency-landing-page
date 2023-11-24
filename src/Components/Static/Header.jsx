@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import logoText from '../../assets/logo.svg'
-// import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
+import imageHeader from '../../assets/Jpeg/Desktop/image-header.jpg'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {GiCancel} from 'react-icons/gi'
 import { Link } from 'react-router-dom'
@@ -75,7 +75,8 @@ const Header = () => {
 export default Header
 
 const Container = styled.div`
-    background-color: #3EBFFF;
+ background-image: url(${imageHeader});
+    /* background-color: #3EBFFF; */
     /* background-size: cover; */
     width: 100%;
     height: 70px;
