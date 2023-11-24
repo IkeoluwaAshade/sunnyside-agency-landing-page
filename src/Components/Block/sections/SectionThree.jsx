@@ -132,10 +132,10 @@ const SecondPart = styled.div`
     color: hsl(198, 62%, 26%);
     width: 50vw;
     
-    /* @media (max-width: 500px) {
-        flex-direction: column;
+    @media (max-width: 500px) {
+        /* flex-direction: column; */
         width: 100%;
-    } */
+    }
 `
 
 const ImageDivTwo = styled.div`
@@ -143,6 +143,13 @@ const ImageDivTwo = styled.div`
     height: 400px;
     display: flex;
     justify-content: center;
+
+    img {
+        object-fit: cover;
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
 `
 
 const Div = styled.div`
