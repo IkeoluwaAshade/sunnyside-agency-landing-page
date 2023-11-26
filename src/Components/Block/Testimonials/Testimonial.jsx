@@ -51,6 +51,9 @@ export default Testimonial
 const Container = styled.div`
 background-color: hsl(0, 0%, 100%);
 
+@media (max-width: 500px) {
+  margin-top: 500px;
+}
 `
 
 const Wrapper = styled.div`

@@ -5,7 +5,7 @@ import Tangerine from '../../../assets/Jpeg/Desktop/image-photography.jpg'
 
 const SectionThree = () => {
   return (
-    <Container>
+
         <Wrapper>
             <FirstPart>
                 <ImageDiv>
@@ -37,16 +37,13 @@ const SectionThree = () => {
             </SecondPart>
 
         </Wrapper>
-    </Container>
+    
   )
 }
 
 export default SectionThree
 
-const Container = styled.div`
-/* background-color: red; */
 
-`
 
 const Wrapper = styled.div`
     display: flex;
@@ -156,6 +153,7 @@ const Div = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 `
 
 const HeadingandParaTwo = styled.div`
