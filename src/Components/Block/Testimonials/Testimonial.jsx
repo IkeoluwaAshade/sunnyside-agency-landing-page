@@ -38,7 +38,7 @@ const Testimonial = () => {
             ParagraphyText="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
             
             Name="Jennie F.."
-            Office="Business Onwer" />
+            Office="Business Owner" />
             </PartOneHold>
             
         </Wrapper>
