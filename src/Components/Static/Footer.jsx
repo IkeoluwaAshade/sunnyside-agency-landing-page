@@ -63,8 +63,10 @@ const Container = styled.div`
     font-weight: 700;
     width: 100%;
     height: 450px;
-  
-
+    
+    @media (max-width: 500px) {
+      height: 520px;
+    } 
 
     bottom: 0;
     /* position: fixed; */
@@ -90,6 +92,11 @@ font-size: 29px;
 display: flex;
 justify-content: center;
 align-items: center;
+
+
+@media (max-width: 500px) {
+  padding-top: 120px;
+}
 `
 
 const Nav = styled.div`
@@ -104,7 +111,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-
+@media (max-width: 500px) {
+  width: 250px;
+}
 `
 
 const About = styled.div`
@@ -140,6 +149,10 @@ margin-top: 5rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@media (max-width: 500px) {
+  width: 200px;
+}
 `
 
 const Facebook = styled.div`
@@ -184,4 +197,7 @@ font-size: 10px;
 font-family: "Barlow";
 font-weight: 900;
 
+@media (max-width: 500px) {
+  margin-top: 22px;
+}
 `

@@ -25,7 +25,7 @@ const Home = () => {
         <Gallery />
         
         
-        {/* <Footer /> */}
+        <Footer />
 
         
     </Container>
